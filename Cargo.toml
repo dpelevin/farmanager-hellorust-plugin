@@ -24,3 +24,6 @@ farmanager = { git = "https://github.com/dpelevin/farmanager-api-rust-bindings" 
 [dependencies.winapi]
 version = "0.3"
 features = ["winuser", "minwinbase"]
+
+[profile.release]
+lto = true
